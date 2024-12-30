@@ -17,8 +17,8 @@ for i in range(1,NumObjet):
 
 MotATrouver=MotATrouver[:-1]
 Mot='_' * len(MotATrouver)
-print(len(Mot))
-print(len(MotATrouver))
+FichierObjets.close()
+FichierObjets=open('Objets.txt','a')
 #Jeu
 while not Gagnant:
     l=input("Veuillez entrer une lettre")
@@ -39,3 +39,11 @@ while not Gagnant:
     if Mot==MotATrouver:
         Gagnant=True
         print("Bravo vous avez gagné")
+        NouveauMot=input("Pour nous aider à améliorer le jeu veuillez bien entrer le nom d'un objet en minuscule et sans accent")
+        Bon=True
+        for l in NouveauMot:
+            if not l in LettreAdmisible:
+                Bon=False
+        if Bon:
+            FichierObjets.write("\n"+NouveauMot)
+FichierObjets.close()
