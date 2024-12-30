@@ -19,6 +19,7 @@ MotATrouver=MotATrouver[:-1]
 Mot='_' * len(MotATrouver)
 FichierObjets.close()
 FichierObjets=open('Objets.txt','a')
+
 #Jeu
 while not Gagnant:
     l=input("Veuillez entrer une lettre")
@@ -46,4 +47,14 @@ while not Gagnant:
                 Bon=False
         if Bon:
             FichierObjets.write("\n"+NouveauMot)
+            with open('Objets.txt', 'r') as fichier:
+                lignes = fichier.readlines()
+
+            # Modifier la première ligne avec le nouveau nombre de mots
+            nouveau_nombre = len(lignes)
+            lignes[0] = f"{nouveau_nombre}\n"
+
+            # Réécrire le contenu dans le fichier
+            with open('Objets.txt', 'w') as fichier:
+                fichier.writelines(lignes)
 FichierObjets.close()
