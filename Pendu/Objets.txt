@@ -1,4 +1,4 @@
-22
+32
 fraise
 pomme
 aventure
@@ -22,3 +22,11 @@ oreiller
 serviette
 brosse
 crayon
+orange
+armoire
+papier
+boite
+voiture
+porte
+chargeur
+carte
