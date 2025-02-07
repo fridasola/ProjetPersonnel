@@ -1,10 +1,126 @@
-h1 {
-    background-color: #ffffff;
-    color: #b82229;
-    padding: 50px;
+/* Style général de la page */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f8a5c2, #f79c42); /* Dégradé doux en fond */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
     text-align: center;
 }
+
+header {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #e63946;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    margin: 0;
+}
+
 h2 {
-    padding: 20 px;
-    text-align: center;
+    color: #fff;
+    font-size: 1.8em;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+/* Style du bouton */
+button {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #ff4d6d;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(1.05);
+}
+
+/* Style du div de réponse */
+#reponse {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #fffae5;
+    font-weight: 600;
+    transition: opacity 1s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Effet de fade-in pour le message */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#reponse {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Rétrécir le bouton "Non" quand il est cliqué */
+#non.reduit {
+    transform: scale(0.6); /* Réduit la taille du bouton "Non" */
+}
+
+/* Style du message "Comment ça non ? Aïe !" */
+#messageNon {
+    margin-top: 20px;
+    font-size: 1.8em;
+    color: #fffae5;
+    font-weight: 700;
+    animation: fadeIn 1s ease-in-out; /* Effet d'apparition */
+}
+/* Conteneur des cœurs */
+.hearts-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Pour ne pas interférer avec les boutons */
+    overflow: hidden;
+}
+
+/* Style des cœurs */
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 30px;
+    animation: floatUp 3s linear infinite; /* Animation pour flotter */
+    opacity: 0;
+}
+
+/* Animation des cœurs */
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) scale(0.5);
+        opacity: 0;
+    }
 }
