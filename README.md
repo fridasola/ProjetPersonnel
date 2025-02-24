@@ -3,3 +3,6 @@ Voici des projets que je fais à coter de mes études afin d'améliorer mes comp
 Voici une liste détaillé des jeux que j'ai déjà fait.
 
 1. Pendu : Jeu du Pendu écrit en python impératif qui utilise des mots extraits d'un fichier
+2. Portfolio: Presentation sur moi avec du HTML CSS et JavaScript
+3. Site pour s'entrainer au CSS: Création pour mon copain
+4. Calculatrice: en c++ en apprenant ce langage
