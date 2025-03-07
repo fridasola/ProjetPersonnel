@@ -1,5 +1,6 @@
 # ProjetPersonnel
-Voici des projets que je fais à coter de mes études afin d'améliorer mes competences dans les différents langage informatique en faisant par exemple des mini jeux.
+Voici des projets en cours que je fais à coter de mes études afin d'améliorer mes competences dans les différents langage informatique en faisant par exemple des mini jeux.
+
 Voici une liste détaillé des jeux ou projets que j'ai déjà réaliser.
 
 1. Pendu : Jeu du Pendu écrit en python impératif qui utilise des mots extraits d'un fichier
