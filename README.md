@@ -5,5 +5,5 @@ Voici une liste détaillé des jeux ou projets que j'ai déjà réaliser.
 
 1. Pendu : Jeu du Pendu écrit en python impératif qui utilise des mots extraits d'un fichier
 2. Portfolio: Presentation sur moi avec du HTML CSS et JavaScript
-3. Site pour s'entrainer au CSS: Création pour mon copain
+3. Site pour s'entrainer au CSS
 4. Calculatrice: en c++ en apprenant ce langage
